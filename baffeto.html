@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+		
+	<link rel="shortcut icon" href="icon.png">
+	<title> 
+		
+		Bafetto
+	</title>
+	<style>
+	body{background-image:url(bafbg2.jpg); }
+	.heading{
+	position:fixed;
+	top:0;
+	left:0;
+	background-color:#cc0000; 
+	width:100%;
+	height:75px;
+	
+	}
+	.button,#sub{
+	background-color:black;
+	color:white;
+	border:none;
+	padding: 10px 20px;
+	border-radius:12px;
+	
+	}
+	.button:hover{
+		box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+		p{
+	position:fixed;
+    top:15px;
+	right:20px;
+	font-size:15px;
+
+	font-family:"Georgia";
+	}
+		h1{
+	position:fixed;
+	top:15;
+	left:20px;
+	
+	}
+
+	
+	div {
+	text-align:center;
+	color:black;
+	}
+	.Name{
+		position:relative;
+		top:70px;
+		font-family:cursive;
+		font-size:50px;
+		padding: 5px;
+    margin: 5px;}
+
+	.Review{
+		position:relative;
+		top:70px;
+		font-family:cursive;
+		font-size:50px;
+		padding: 5px;
+    margin: 5px;
+	}
+	a:link{ color:black;}
+	a:visited{ color:black;}
+	a:hover{ color:blue;}
+	a:focus{ color:red;}
+	.Menu{
+
+		
+	background-image:url(bafmenu2.jpg);
+	border: solid 5px black;
+	position:relative;
+	left:370px;
+	top:70px;
+	width:600px;
+	padding:0px;
+	margin:0px;
+	}
+	.Menutitle{
+	background-color:black;
+	position:realtive;
+	font-family:cursive;
+		font-size:30px;
+		color:white;
+		padding: 5px;
+    margin: 0px;
+	}
+	.qty{
+	width=20px;
+	}
+	</style>
+</head>
+<body>
+	
+	<div class="Menu">
+		<div class="Menutitle"><b>MENU</b></div>
+	<form action="BafettoBill.php" id="form1" method="post">
+	<table width = 500px >
+	<tr><th style="color:green;">Soups</th></tr>
+	  <tr><td><input type="checkbox" class="cb" name="Bafetto[]" id="Bafetto" value="soupTBS"></td><td>Tomato Basil Soup</td><td>120</td> </tr><br>
+	  <tr><td><input type="checkbox" class="cb" name="Bafetto[]" id="Bafetto"  value="soupMS"></td><td>Minestrone Soup</td><td>120</td></tr> <br>
+	  <tr><td><input type="checkbox" class="cb" name="Bafetto[]" id="Bafetto"  value="soupCTS"></td><td>Chicken Tortilla Soup</td><td>150</td></tr> <br>
+	  
+
+	 </table>
+	 <table width = 500px >
+	  <tr><th style="color:green;">Salads</th></tr>
+	  <tr><td><input type="checkbox" name="Bafetto[]" id="Bafetto"  value="saladCS"></td><td>Caesar Salad </td><td>180</td></tr> <br>
+	  <tr><td><input type="checkbox" name="Bafetto[]" id="Bafetto"  value="saladCRGS"></td><td>Country Ranch Green Salad</td><td>180</td></tr> <br>
+	  <tr><td><input type="checkbox" name="Bafetto[]" id="Bafetto"  value="saladLCCS"></td><td>Lime Cilantro Chicken Salad</td><td>210</td></tr> <br>
+
+	  </table>
+	  	 <table width = 500px >
+	  <tr><th style="color:green;">Appetizers:</th></tr>
+	  <tr><td><input type="checkbox" name="Bafetto[]" id="Bafetto" value="appBN"></td><td>Bruschetta Napoli </td><td>180</td></tr> <br>
+	  <tr><td><input type="checkbox" name="Bafetto[]" id="Bafetto"  value="appJP"></td><td>Jacket Potatoes</td><td>180</td></tr> <br>
+	  <tr><td><input type="checkbox" name="Bafetto[]" id="Bafetto"  value="appLCPC"></td><td>Lime Chilli Pepper Chicken</td><td>220</td></tr> <br>
+	  <tr><td><input type="checkbox" name="Bafetto[]" id="Bafetto"  value="appHGC"></td><td>Honey Glazed Chicken</td><td>250</td></tr> <br>
+	  <tr><td><input type="checkbox" name="Bafetto[]" id="Bafetto"  value="appCN"></td><td>Cheesy Nachos</td><td>170</td></tr> <br>
+	 
+	  </table>
+	  
+	   </table>
+	  	 <table width = 500px >
+	  <tr><th style="color:green;">Pasta:</th></tr>
+	  <tr><td><input type="checkbox" name="Bafetto[]" id="Bafetto" value="pastaGSV"></td><td>Green Spagetti Vegetali </td><td>190</td></tr> <br>
+	  <tr><td><input type="checkbox" name="Bafetto[]" id="Bafetto"  value="pastaBP"></td><td>Bechamel Pasta</td><td>210</td></tr> <br>
+	  <tr><td><input type="checkbox" name="Bafetto[]" id="Bafetto"  value="pastaSWM"></td><td>Spagetti with Meatballs</td><td>250</td></tr> <br>
+	  <tr><td><input type="checkbox" name="Bafetto[]" id="Bafetto"  value="pastaPCP"></td><td>Pesto Chicken Pasta</td><td>240</td></tr> <br>
+	  <tr><td><input type="checkbox" name="Bafetto[]" id="Bafetto"  value="pastaPA"></td><td>Penne Arrabiata</td><td>190</td></tr> <br>
+	 
+	  </table>
+	  
+	 
+	  
+	   </table>
+	  	 <table width = 500px >
+	  <tr><th style="color:green;">Pizza:</th></tr>
+	  <tr><td><input type="checkbox" name="Bafetto[]" id="Bafetto" value="pizzaCM"></td><td>Classic Margherita</td><td>280</td></tr> <br>
+	  <tr><td><input type="checkbox" name="Bafetto[]" id="Bafetto"  value="pizzaSIP"></td><td>Spicy Italian Pepperoni</td><td>300</td></tr> <br>
+	  <tr><td><input type="checkbox" name="Bafetto[]" id="Bafetto"  value="pizzaGSP"></td><td>Garden Style Pizza</td><td>290</td></tr> <br>
+	  <tr><td><input type="checkbox" name="Bafetto[]" id="Bafetto"  value="pizzaSCP"></td><td>Sonora Chicken Pizza</td><td>320</td></tr> <br>
+	  <tr><td><input type="checkbox" name="Bafetto[]" id="Bafetto"  value="pizzaMP"></td><td>Mediterranian Pizza</td><td>310</td></tr> <br>
+	 
+	  </table>
+	  <br><br><br>
+	  <input type="submit" id="sub" value="Done"><br><br>
+	</form>
+	
+	</div>
+	<div class="heading">
+		<h1 style="color:white; font-family:Cambria;" >
+		  Bafetto <img src="baficon.jpg" width=50 height=50> <p> Ratings: <img src ="Rate.png"  alt = "Photo" width="100px" height="20px"/>    </p>
+		  
+	</h1>  
+	</div>
+	
+<script>
+	//document.querySelector("#form1").onSubmit=check();
+	document.getElementById("sub").addEventListener("click", check,false);
+	var x = document.getElementById("form1") ;
+	function check(e)
+	{
+		if(confirm("Are you sure you want to generate the bill now?"))
+		{
+			x.submit();
+		}
+		else{
+		e.preventDefault();}
+	}
+</script>
+
+
+
+</body>
+</html>
+</body>
+</html>
